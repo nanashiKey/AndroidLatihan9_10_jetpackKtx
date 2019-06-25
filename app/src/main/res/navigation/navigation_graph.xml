@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation_graph" app:startDestination="@id/listPeopleFR">
+
+    <fragment android:id="@+id/listPeopleFR"
+              android:name="com.ngopidev.project.androidlatihan9_10_jetpackktx.allviews.view_cl.ListPeopleFR"
+              android:label="ListPeopleFR">
+        <action android:id="@+id/action_listPeopleFR_to_FRDetail" app:destination="@id/FRDetail"/>
+        <action android:id="@+id/action_listPeopleFR_to_FRAddPeople" app:destination="@id/FRAddPeople"/>
+    </fragment>
+    <fragment android:id="@+id/FRAddPeople"
+              android:name="com.ngopidev.project.androidlatihan9_10_jetpackktx.allviews.view_addData.FRAddPeople"
+              android:label="FRAddPeople"/>
+    <fragment android:id="@+id/FRDetail"
+              android:name="com.ngopidev.project.androidlatihan9_10_jetpackktx.allviews.view_detailContact.FRDetail"
+              android:label="FRDetail"/>
+</navigation>
